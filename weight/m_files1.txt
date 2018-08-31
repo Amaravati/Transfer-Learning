@@ -1,0 +1,23 @@
+f_w2c0=open('./weight/w2r0.list','w')
+f_w2c1=open('./weight/w2r1.list','w')
+f_w2c2=open('./weight/w2r2.list','w')
+f_w2c3=open('./weight/w2r3.list','w')
+
+    f_w2c0.write(str(decbin(w_fc2[i,0],int_w-2,frac_w+4) ) )
+    f_w2c0.write('')
+    f_w2c1.write(str(decbin(w_fc2[i,1],int_w-2,frac_w+4) ) )
+    f_w2c1.write('')
+    f_w2c2.write(str(decbin(w_fc2[i,2],int_w-2,frac_w+4) ) )
+    f_w2c2.write('')
+    f_w2c3.write(str(decbin(w_fc2[i,3],int_w-2,frac_w+4) ) )
+    f_w2c3.write('')
+fc3_ot=open('./weight/fc3_ot_1.txt','w')
+    for i in range(fc3_output1.shape[0]):
+        for j in range(fc3_output1.shape[1]):
+            fc3_ot.write(str(decbin(fc3_output1[{},{}],int_w-1,frac_w)))            
+        fc3_ot.write('')
+
+    y_o=open('./weight/ytn.list','w')
+    for i in range(ytn.shape[0]):
+        y_o.write(str(decbin(ytn[i], 3,0)))
+        y_o.write(\)
